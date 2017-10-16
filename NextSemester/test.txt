@@ -1,0 +1,86 @@
+<h1> Testing something </h1>
+<p> this is a sub test </p>
+<br></br>
+<h2> Testing again </h2>
+<p> wow this is boring </p>
+
+
+
+
+<a name="cs1000"></a><p> <b>CS 1000. Computing Skills and Concepts</b>  -- 3 hrs. <br/> Introduction to operation, applications, implications of computers, microcomputers, and network communications. Develops skill in current applications and sensitizes students to societal issues related to computing. </p>
+<p>Offered Fall and Spring</p>
+<p>Prerequisite(s): N/A </p>
+
+
+<a name="cs1010"></a> <a name="022"></a><p> <b>CS 1010 (810:022).    Microcomputer Applications and Systems Integration</b>    -- 3 hrs.  <br/> Emphasis on developing macros and programs, importing and exporting files between applications, solving and implementing applications and problems, and other more advanced topics.  Examination of software such as word processing, spreadsheets, and database
+languages.</p>
+<p>Offered Fall</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>cs1000</h2>
+<h3>Computing Skills and Concepts - 3 hrs </h3>
+<p>Introduction to operation, applications, implications of computers, microcomputers, and network communications.  Develops skill in current applications and sensitizes students to societal issues related to computing. (Offered Fall and Spring)  </p>   <a name="cs1010"></a> <a name="022"></a><p> <b>CS 1010 (810:022).    Microcomputer Applications and Systems Integration</b>    -- 3 hrs.  <br/> Emphasis on developing macros and programs, importing and exporting files between applications, solving and implementing applications and problems, and other more advanced topics.  Examination of software such as word processing, spreadsheets, and database
+languages.</p>
+<p>Prerequisite(s): CS 1000 or equivalent.</p>
+<p>Offered Fall</p>
+
+cs1010
+Microcomputer Applications and Systems Integration
+3 hrs
+Emphasis on developing macros and programs, importing and exporting files between applications, solving and implementing applications and problems, and other more advanced topics.  Examination of software such as word processing, spreadsheets, and database
+languages.  Prerequisite(s): CS 1000 or equivalent.
+(Offered Fall)
+
+cs2420
+Computer Architecture and Parallel Programming
+3 hrs
+Computer architecture of uniprocessor and multiprocessor systems with an emphasis on parallel programming to achieve high performance. Topics include processor design (pipelining and superscalar), memory hierarchy, interconnection networks, performance metrics, parallel program design, and parallel programming tools for multi-core systems, clusters, and graphics processing units.
+Prerequisite(s): CS 1410.
+(Offered Fall)
+
+cs3120
+User Interface Design
+3 hrs
+Examination of the theory, design, programming, and evaluation of interactive application interfaces.  Topics include human capabilities and limitations, the interface design and engineering process, prototyping and interface construction, interface evaluation, and possibly topics such as data visualization and the World Wide Web. Prerequisite(s) for Computer Science majors: CS 1520; CS 1800; junior standing. Prerequisite(s) for non-Computer Science majors: junior standing; department approval. (Offered Fall)  </p>   <a name="cs3140"></a> <a name="114"></a><p> <b>CS 3140/5140 (810:114g).    Database Systems</b>    -- 3 hrs.  <br/> Storage of, and access to, physical databases; data models, query languages, transaction processing, and recovery techniques; object-oriented and distributed database systems; and database design.
+Prerequisite(s): CS 1520; CS 1800; junior standing.
+(Offered Fall)
+
+cs3140
+Database Systems
+3 hrs
+Storage of, and access to, physical databases; data models, query languages, transaction processing, and recovery techniques; object-oriented and distributed database systems; and database design.
+Prerequisite(s): CS 1520; CS 1800; junior standing.
+(Offered Fall)
+
+cs3530
+Design and Analysis of Algorithms
+3 hrs
+Algorithm design techniques such as dynamic programming and greedy algorithms; complexity analysis of algorithms; efficient algorithms for classical problems; intractable problems and techniques for addressing them; and algorithms for parallel machines.
+Prerequisite(s): CS 1520; CS 1800.
+(Offered Fall)
+
+cs3610
+Artificial Intelligence
+3-4 hrs
+Models of intelligent behavior and problem solving; knowledge representation and search methods; learning; topics such as knowledge-based systems, language understanding, and vision; optional 1-hour lab to include exploration of one or more additional AI programming techniques such as robotics, symbolic programming, heuristic programming, etc.
+Prerequisite(s): CS 1520; CS 1800; junior standing.
+(Offered Fall)
+
+cs4410
+System Security
+3 hrs
+Topics include the need for security services, data integrity, network intrusion and monitoring, configuration of secure services, root kits, and buffer overflow techniques and remedies.  Additional topics include enterprise-wide monitoring, honeypots, and recognizing trends in a networked environment.
+Prerequisite(s): CS 3470; junior standing.
+(Offered Fall)

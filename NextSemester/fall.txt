@@ -1,0 +1,55 @@
+<a name="cs1010"</a><p> <b>CS 1010. Microcomputer Applications and Systems Integration --3 hrs.</b> <br/> Emphasis on developing macros and programs, importing and exporting files between applications, solving and implementing applications and problems, and other more advanced topics.  Examination of software such as word processing, spreadsheets, and database languages. </p>
+<p>(Offered Fall)</p>
+<p>Prerequisite(s): CS 1000 or equivalent.</p>
+
+<a name="cs1100"</a><p> <b>CS 1100. Web Development: Client-Side Coding --3 hrs.</b> <br/> Client-side Web development adhering to recent/current Web standards. Includes by-hand Web page development involving basic HTML, CSS, data acquisition using forms, and JavaScript for data validation and simple Web-based tools. </p>
+<p>(Offered Fall)</p>
+<p>Prerequisite(s): N/A</p>
+
+<a name="cs1140"</a><p> <b>CS 1140. Introduction to Programming Environments for Education --3 hrs.</b> <br/> Introduction to computer programming through a survey of programming environments used by teachers.  Topics include structure of programming, study of several programming environments used by students at a variety of age/ability levels, and end-user programming for teachers. </p>
+<p>(Offered Fall)</p>
+<p>Prerequisite(s): N/A</p>
+
+<a name="cs1100"</a><p> <b>CS 1100. Web Development: Client-Side Coding --3 hrs.</b> <br/> Client-side Web development adhering to recent/current Web standards. Includes by-hand Web page development involving basic HTML, CSS, data acquisition using forms, and JavaScript for data validation and simple Web-based tools. </p>
+<p>(Offered Fall)</p>
+<p>Prerequisite(s): N/A</p>
+
+<a name="cs2420"</a><p> <b>CS 2420. Computer Architecture and Parallel Programming --3 hrs.</b> <br/> Computer architecture of uniprocessor and multiprocessor systems with an emphasis on parallel programming to achieve high performance. Topics include processor design (pipelining and superscalar), memory hierarchy, interconnection networks, performance metrics, parallel program design, and parallel programming tools for multi-core systems, clusters, and graphics processing units.  </p>
+<p>(Offered Fall)</p>
+<p>Prerequisite(s): CS 1410.</p>
+
+<a name="cs3120"</a><p> <b>CS 3120. User Interface Design --3 hrs.</b> <br/> Examination of the theory, design, programming, and evaluation of interactive application interfaces.  Topics include human capabilities and limitations, the interface design and engineering process, prototyping and interface construction, interface evaluation, and possibly topics such as data visualization and the World Wide Web. </p>
+<p>(Offered Fall)</p>
+<p>Prerequisite(s) for Computer Science majors: CS 1520; CS 1800; junior standing. </p>
+<p>Prerequisite(s) for non-Computer Science majors: junior standing;  department approval.</p>
+
+<a name="cs3140"</a><p> <b>CS 3140. Database Systems --3 hrs.</b> <br/> Storage of, and access to, physical databases; data models, query languages, transaction processing, and recovery techniques; object-oriented and distributed database systems; and database design.  </p>
+<p>(Offered Fall)</p>
+<p>Prerequisite(s): CS 1520; CS 1800; junior standing.</p>
+
+<a name="cs3470"</a><p> <b>CS 3470. Networking --3 hrs.</b> <br/> Network architectures and communication protocol standards. Topics include communication of digital data, data-link protocols, local-area networks, network-layer protocols, transport-layer protocols, applications, network security, and management.   </p>
+<p>(Offered Fall)</p>
+<p>Prerequisite(s): CS 1410; CS 1520; CS 1800; junior standing.</p>
+<p>Prerequisite(s) for Technology majors: TECH 1037; TECH 2041;TECH 2042; CS 1160.</p>
+
+<a name="cs3530"</a><p> <b>CS 3530. Design and Analysis of Algorithms --3 hrs.</b> <br/> Algorithm design techniques such as dynamic programming and greedy algorithms; complexity analysis of algorithms; efficient algorithms for classical problems; intractable problems and techniques for addressing them; and algorithms for parallel machines.  </p>
+<p>(Offered Fall)</p>
+<p>Prerequisite(s): CS 1520; CS 1800.</p>
+
+<a name="cs3610"</a><p> <b>CS 3610. Artificial Intelligence --3-4 hrs.</b> <br/> Models of intelligent behavior and problem solving; knowledge representation and search methods; learning; topics such as knowledge-based systems, language understanding, and vision; optional 1-hour lab to include exploration of one or more additional AI programming techniques such as robotics, symbolic programming, heuristic programming, etc.  </p>
+<p>(Offered Fall)</p>
+<p>Prerequisite(s): CS 1520; CS 1800; junior standing.</p>
+
+<a name="cs4410"</a><p> <b>CS 4410. System Security --3 hrs.</b> <br/> Topics include the need for security services, data integrity, network intrusion and monitoring, configuration of secure services, root kits, and buffer overflow techniques and remedies.  Additional topics include enterprise-wide monitoring, honeypots, and recognizing trends in a networked environment.  </p>
+<p>(Offered Fall)</p>
+<p>Prerequisite(s): CS 3470; junior standing.</p>
+
+<a name="cs4550"</a><p> <b>CS 4550. Translation of Programming Languages --3 hrs.</b> <br/> Introduction to analysis of programming languages and construction of translators.   </p>
+<p>(Offered Fall)</p>
+<p>Prerequisite(s): CS 2530 and one of the following: CS 3530, CS 3540, CS 3810; junior standing.</p>
+<p>Prerequisite(s) or corequisite(s): CS 3730.</p>
+
+<a name="cs4740"</a><p> <b>CS 4740. Real-Time Embedded Systems --4 hrs.</b> <br/> Specification, design, and implementation principles and techniques for real-time embedded systems.  Topics include programming languages and paradigms, reliability and fault tolerance, concurrent programming, scheduling, and the interaction between hardware and software.  Student teams will complete a significant real-time embedded software project.   </p>
+<p>(Offered Fall)</p>
+<p>Prerequisite(s): CS 2530; CS 2720; junior standing.</p>
+<p>Prerequisite(s) or corequisite(s): CS 3730.</p>
