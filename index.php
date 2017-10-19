@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 	</head>
 	<body>
 
@@ -37,10 +38,11 @@
 										<p>My name is Michael Riesberg-Timmer and I am a Junior studying Computer Science at the University of Northern Iowa. This website will be a platform for me to host my old programming assignments to show both what I have experience with and a progression from the beginning of my programming career to the present.</p>
 										<ul class="actions">
 											<li><a href="about.php" class="button big">Learn More</a></li>
+	    									<li><div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="michael-riesberg-timmer-9871a0117"><a class="LI-simple-link" href='https://www.linkedin.com/in/michael-riesberg-timmer-9871a0117?trk=profile-badge'>Michael Riesberg-Timmer</a></div></li>
 										</ul>
 									</div>
 									<span class="image object">
-										<img src="profile2.png"									</div>
+										<img src="profile3.png"	style="height: 75%"				</div>
 								</section>
 
 
