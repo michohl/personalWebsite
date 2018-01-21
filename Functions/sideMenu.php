@@ -44,7 +44,7 @@ echo '<!-- Sidebar -->
                             <span class="opener">Personal Projects</span>
                             <ul>
                                 <li><a href="nextSemester.php">Next Semester Data</a></li>
-                                <li><a href="whosIn.php">Who is In</a></li>
+                                <li><a href="construction.php">Who is In</a></li>
                             </ul>
                         </li>
                     <li><a href="about.php">About This Site</a></li>
