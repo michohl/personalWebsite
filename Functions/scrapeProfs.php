@@ -1,6 +1,6 @@
 <?php
     //This is where the database info is stored
-    require_once("admin/config.php");
+    require_once("../admin/config.php");
 
 	//establish connection to the professors part of the UNI CS website.
 	$url = 'http://cs.uni.edu/faculty_staff.php';    
@@ -19,7 +19,11 @@
         $current = trim($prof->textContent);
         $formatted = str_replace("'","\'",$current);
 
-        $sql = "INSERT INTO Professors(Name) VALUES('" . $formatted . "')";
+        //Remove periods from name for file name
+        $fileName = str_replace(".","",$formatted);
+        $imagePath = "assets/images/professors/" . str_replace(" ","",$fileName) . ".jpg";
+
+        $sql = "INSERT INTO Professors(Name,imagePath) VALUES('" . $formatted . "', '" . $imagePath . "')";
         if ($conn->query($sql) !== TRUE){
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
