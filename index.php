@@ -42,7 +42,7 @@
 										</ul>
 									</div>
 									<span class="image object">
-										<img src="profile3.png"	style="height: 75%"				</div>
+										<img src="assets/images/profile3.png"	style="height: 75%"				</div>
 								</section>
 
 

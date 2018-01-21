@@ -37,7 +37,7 @@
 										<p>Intro to Computing is the first course in the CS major where students learn the fundementals of programming using Python 3.5</p>
 									</div>
 									<span class="image object">
-										<img src="python.png"									</div>
+										<img src="assets/images/python.png"									</div>
 								</section>
 
 
