@@ -33,8 +33,6 @@
 										<header>
 											<h1>Who's In?</></h1>
 
-                      <!-- CODE STUFF HERE -->
-
 											<div id="display_here"></div>
 
 									<div id="page-wrapper">
@@ -56,6 +54,21 @@
 								echo "<h2>Time is currently: " . date("g:i a") . "</h2>";
 								echo "<h4>Legend: <br> Green light = currently in office <br> Yellow light = No office hours available <br> Red light = Not currently in office </h4>";
 								echo "<br><br><br>";
+
+								require_once('admin/config.php');
+								$conn = new mysqli($loc,$user,$pass,$db);
+								$profs = $conn->query("select Name,imagePath from Professors");
+								while($row = $profs->fetch_assoc()){
+									echo "Name: " . $row["Name"];
+									echo "<br/>";
+									if(file_exists($row["imagePath"])){
+										echo '<img src="' . $row["imagePath"] . '">';
+									}
+									else{
+										echo '<img src="assets/images/professors/NA.jpg">';
+									}
+									echo "<br/>";
+								}
 
 								?>
 
