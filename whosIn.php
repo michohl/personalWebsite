@@ -51,7 +51,7 @@
 
  								<?php
 								//ini_set('display_errors', '1');
-
+								
 								echo "<h2>Day is currently: " . date("l") . "</h2>";
 								echo "<h2>Time is currently: " . date("g:i a") . "</h2>";
 								echo "<h4>Legend: <br> Green light = currently in office <br> Yellow light = No office hours available <br> Red light = Not currently in office </h4>";
@@ -66,6 +66,9 @@
 									$query = "select start,end from " . date("l") . " where prof='" . $row["Name"] . "'";
 									$schedule = $conn->query($query);
 
+									if($schedule === False){
+										break;
+									}
 									//Add all office hour sessions to an array so we can compare to them later
 									while($scheduleRow = $schedule->fetch_assoc()){
 										$daySchedule[] = array($scheduleRow["start"],$scheduleRow["end"]);
