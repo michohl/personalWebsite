@@ -50,27 +50,37 @@
 
 
  								<?php
-								ini_set('display_errors', '1');
+								//ini_set('display_errors', '1');
 
 								echo "<h2>Day is currently: " . date("l") . "</h2>";
 								echo "<h2>Time is currently: " . date("g:i a") . "</h2>";
 								echo "<h4>Legend: <br> Green light = currently in office <br> Yellow light = No office hours available <br> Red light = Not currently in office </h4>";
 								echo "<br><br><br>";
 
+								//Establish connection to database and query for all profs
 								require_once('admin/config.php');
 								$conn = new mysqli($loc,$user,$pass,$db);
 								$profs = $conn->query("select Name,imagePath,schedule from Professors");
 								while($row = $profs->fetch_assoc()){
-									//$query = "select start,end from " . date("l") . " where prof='" . $row["Name"] . "'";
-									$query = "select start,end from " . "Monday" . " where prof='" . $row["Name"] . "'";
+									//Grab the profs office hours for the current day only
+									$query = "select start,end from " . date("l") . " where prof='" . $row["Name"] . "'";
 									$schedule = $conn->query($query);
 
+									//Add all office hour sessions to an array so we can compare to them later
 									while($scheduleRow = $schedule->fetch_assoc()){
-										$daySchedule[] = $scheduleRow;
+										$daySchedule[] = array($scheduleRow["start"],$scheduleRow["end"]);
 									}
-									echo "Name: " . $row["Name"] . "<br/>";
-									echo "<a href = '" . $row["schedule"] . "'>Official Schedule</a><br/><br/>";
 
+									//Display name and a link to the prof's schedule
+									echo "Name: " . $row["Name"] . "<br/>";
+									if($row["schedule"] != ""){
+										echo "<a href = '" . $row["schedule"] . "'>Official Schedule</a><br/><br/>";
+									}
+									else{
+										echo "This professor has no listed office hours <br/><br/>";
+									}
+									
+									//Display prof's image if one exists
 									if(file_exists($row["imagePath"])){
 										echo '<img src="' . $row["imagePath"] . '">';
 									}
@@ -78,18 +88,41 @@
 										echo '<img src="assets/images/professors/NA.jpg">';
 									}
 
-
-									if($scheduleRow["num_rows"] != 0 && $row["schedule"] != ""){
-										$temp = 0;
-									}
-									elseif($row["schedule"] === ""){
-										echo '<img src="assets/images/professors/yellow.png">';
+									if($row["schedule"] != ""){
+										//Here we actually decide if the prof is in the office or not
+										$now = date("g:ia");
+										$breakFlag = False;
+										foreach($daySchedule as $session){
+											/*
+											If the current time is greater than the session start time
+											and less than the end time then the professor should be 
+											in their office.
+											*/
+											$start = ($now > $session[0]);
+											$end = ($now < $session[1]);
+											if($start && $end){
+												echo '<img src="assets/images/professors/green.png">';
+												$breakFlag = True;
+											}
+										}
+										/*
+										Getting here means that the professor has 
+										office hours today but it's not at the current time 
+										*/
+										if($breakFlag == False){
+											echo '<img src="assets/images/professors/red.png">';
+										}
+										
 									}
 									else{
-										echo '<img src="assets/images/professors/red.png">';
+										//Professor doesn't have office hours
+										echo '<img src="assets/images/professors/yellow.png">';
 									}
 
 									echo "<br/><br/>";
+									//This variable needs to be unset because otherwise the next
+									//professor you look at will use the previous professors schedule if they don't have their own.
+									unset($daySchedule);
 								}
 
 								?>
