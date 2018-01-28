@@ -50,6 +50,8 @@
 
 
  								<?php
+								ini_set('display_errors', '1');
+
 								echo "<h2>Day is currently: " . date("l") . "</h2>";
 								echo "<h2>Time is currently: " . date("g:i a") . "</h2>";
 								echo "<h4>Legend: <br> Green light = currently in office <br> Yellow light = No office hours available <br> Red light = Not currently in office </h4>";
@@ -57,17 +59,37 @@
 
 								require_once('admin/config.php');
 								$conn = new mysqli($loc,$user,$pass,$db);
-								$profs = $conn->query("select Name,imagePath from Professors");
+								$profs = $conn->query("select Name,imagePath,schedule from Professors");
 								while($row = $profs->fetch_assoc()){
-									echo "Name: " . $row["Name"];
-									echo "<br/>";
+									//$query = "select start,end from " . date("l") . " where prof='" . $row["Name"] . "'";
+									$query = "select start,end from " . "Monday" . " where prof='" . $row["Name"] . "'";
+									$schedule = $conn->query($query);
+
+									while($scheduleRow = $schedule->fetch_assoc()){
+										$daySchedule[] = $scheduleRow;
+									}
+									echo "Name: " . $row["Name"] . "<br/>";
+									echo "<a href = '" . $row["schedule"] . "'>Official Schedule</a><br/><br/>";
+
 									if(file_exists($row["imagePath"])){
 										echo '<img src="' . $row["imagePath"] . '">';
 									}
 									else{
 										echo '<img src="assets/images/professors/NA.jpg">';
 									}
-									echo "<br/>";
+
+
+									if($scheduleRow["num_rows"] != 0 && $row["schedule"] != ""){
+										$temp = 0;
+									}
+									elseif($row["schedule"] === ""){
+										echo '<img src="assets/images/professors/yellow.png">';
+									}
+									else{
+										echo '<img src="assets/images/professors/red.png">';
+									}
+
+									echo "<br/><br/>";
 								}
 
 								?>
