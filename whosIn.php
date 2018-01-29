@@ -14,6 +14,7 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
+
 	<body>
 
 		<!-- Wrapper -->
@@ -57,11 +58,16 @@
 								echo "<h4>Legend: <br> Green light = currently in office <br> Yellow light = No office hours available <br> Red light = Not currently in office </h4>";
 								echo "<br><br><br>";
 
+								//echo '<div id="profContainer">';
+
 								//Establish connection to database and query for all profs
 								require_once('admin/config.php');
 								$conn = new mysqli($loc,$user,$pass,$db);
 								$profs = $conn->query("select Name,imagePath,schedule from Professors");
 								while($row = $profs->fetch_assoc()){
+									//Begin the div for this prof
+									//echo '<div class="profDiv">';
+
 									//Grab the profs office hours for the current day only
 									$query = "select start,end from " . date("l") . " where prof='" . $row["Name"] . "'";
 									$schedule = $conn->query($query);
@@ -85,10 +91,10 @@
 									
 									//Display prof's image if one exists
 									if(file_exists($row["imagePath"])){
-										echo '<img src="' . $row["imagePath"] . '">';
+										echo '<img src="' . $row["imagePath"] . '" height="202" width="274">';
 									}
 									else{
-										echo '<img src="assets/images/professors/NA.jpg">';
+										echo '<img src="assets/images/professors/NA.jpg" height="202" width="274">';
 									}
 
 									if($row["schedule"] != ""){
@@ -126,8 +132,12 @@
 									//This variable needs to be unset because otherwise the next
 									//professor you look at will use the previous professors schedule if they don't have their own.
 									unset($daySchedule);
+
+									//End div for this prof
+									//echo "</div>";
 								}
 
+								//echo "</div>";
 								?>
 
 
