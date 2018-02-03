@@ -13,6 +13,12 @@
 
   </head>
 
+  <style>
+    #profs a {
+        color: blue;
+    }
+  </style>
+
   <body>
     <?php require_once('../Functions/navbar.php');?>
 
@@ -26,6 +32,8 @@
         <h4>Yellow Light = No office hours available</h4>
         <h4>Red Light = Not currently in office</h4>
     </div>
+
+    <div id="profs" class="text-center">
     <?php
         //ini_set('display_errors', '1');
         
@@ -61,11 +69,11 @@
             }
             
             //Display prof's image if one exists
-            if(file_exists($row["imagePath"])){
-                echo '<img src="' . $row["imagePath"] . '" height="202" width="274">';
+            if(file_exists('../' . $row["imagePath"])){
+                echo '<img src="../' . $row["imagePath"] . '" height="202" width="274">';
             }
             else{
-                echo '<img src="assets/images/professors/NA.jpg" height="202" width="274">';
+                echo '<img src="../assets/images/professors/NA.jpg" height="202" width="274">';
             }
 
             if($row["schedule"] != ""){
@@ -81,7 +89,7 @@
                     $start = ($now > $session[0]);
                     $end = ($now < $session[1]);
                     if($start && $end){
-                        echo '<img src="assets/images/professors/green.png">';
+                        echo '<img src="..//assets/images/professors/green.png">';
                         $breakFlag = True;
                     }
                 }
@@ -90,13 +98,13 @@
                 office hours today but it's not at the current time 
                 */
                 if($breakFlag == False){
-                    echo '<img src="assets/images/professors/red.png">';
+                    echo '<img src="../assets/images/professors/red.png">';
                 }
                 
             }
             else{
                 //Professor doesn't have office hours
-                echo '<img src="assets/images/professors/yellow.png">';
+                echo '<img src="../assets/images/professors/yellow.png">';
             }
 
             echo "<br/><br/>";
@@ -110,6 +118,7 @@
 
         //echo "</div>";
         ?>
+        </div>
   </body>
   
 </html>

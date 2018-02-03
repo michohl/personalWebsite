@@ -43,7 +43,7 @@ echo '
                     <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="https://github.com/michohl">My Github</a></li>
-                        <li><a href="/projects/nextSemester.php">Next Semester</a></li>
+                        <li><a href="/construction.php">Next Semester</a></li>
                         <li><a href="/projects/whosin.php">Who\'s In</a></li>
                     </ul>
                 </li>     
