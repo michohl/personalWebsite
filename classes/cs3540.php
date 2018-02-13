@@ -54,6 +54,12 @@
                     <td>Writing higher order functions in Racket</td>
                     <td><a href="http://www.michaeltimmer.me/JuniorYear/cs3540/HW03.zip">Download</a></td>
                 </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Homework 4</td>
+                    <td>Writing normal structural recursion and interfaced recursion</td>
+                    <td><a href="http://www.michaeltimmer.me/JuniorYear/cs3540/HW04.zip">Download</a></td>
+                </tr>
             </tbody>
         </table>
     </div>
