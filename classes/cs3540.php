@@ -54,6 +54,30 @@
                     <td>Writing higher order functions in Racket</td>
                     <td><a href="http://www.michaeltimmer.me/JuniorYear/cs3540/HW03.zip">Download</a></td>
                 </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Homework 4</td>
+                    <td>Writing normal structural recursion and interfaced recursion</td>
+                    <td><a href="http://www.michaeltimmer.me/JuniorYear/cs3540/HW04.zip">Download</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Homework 5</td>
+                    <td></td>
+                    <td><a href="http://www.michaeltimmer.me/JuniorYear/cs3540/HW05.zip">Download</a></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Homework 6</td>
+                    <td></td>
+                    <td><a href="http://www.michaeltimmer.me/JuniorYear/cs3540/HW06.zip">Download</a></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Homework 7</td>
+                    <td>Expand upon the little language</td>
+                    <td><a href="http://www.michaeltimmer.me/JuniorYear/cs3540/HW07.zip">Download</a></td>
+                </tr>            
             </tbody>
         </table>
     </div>
