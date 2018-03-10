@@ -46,9 +46,14 @@
                     <td>2</td>
                     <td>Project 2</td>
                     <td>Running OWASP and Kali Linux virtual machines go through WebGoat course.</td>
-                    <td>N/A</td>
-                    <!--<td><a href="http://www.michaeltimmer.me/JuniorYear/cs4410/HW02.zip">Download</a></td>-->
+                    <td><a href="http://www.michaeltimmer.me/JuniorYear/cs4410/PROJ02.zip">Download</a></td>
                 </tr> 
+                <tr>
+                    <td>3</td>
+                    <td>Project 3</td>
+                    <td>Update documentation for LampSec Capture the Flag machines.</td>
+                    <td><a href="http://www.michaeltimmer.me/JuniorYear/cs4410/PROJ03.zip">Download</a></td>
+                </tr>                 
             </tbody>
         </table>
     </div>
