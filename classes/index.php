@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Michael Riesberg-Timmer's Portfolio</title>
+<title>MR-T's Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    <?php require_once('Functions/navbar.php');?>
+    <?php require_once('../Functions/navbar.php');?>
 
     <!-- Page Header -->
     <div class="jumbotron text-center">
@@ -29,7 +29,6 @@
         from the beginning of my programming career to the present.
         </h3>
       </div>
-        <img class="center-block" src="/assets/images/profile3.png" width="15%" height="20%">
   </body>
   
 </html>
