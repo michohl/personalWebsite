@@ -24,8 +24,8 @@
     </div>
 
     <!-- Homeworks & Projects -->
-    <div class="table-responsive">
-        <table class="table center-block" style='width: 40%'>
+    <div>
+        <table class="table table-responsive center-block" style='width: 40%'>
             <thead>
                 <tr>
                     <th>Number</th>
