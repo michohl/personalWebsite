@@ -78,8 +78,8 @@
 
     $conn->begin_transaction();
     for($i=0;$i< sizeof($classNumbers);$i++){
-        echo "INSERT INTO classes(Number, Name, Hours, Description) VALUES('{$classNumbers[$i]}','{$classNames[$i]}',{$classHours[$i]},'{$classDescription[$i]}')";       
-        $conn->query("INSERT INTO classes(Number, Name, Hours, Description) VALUES('{$classNumbers[$i]}','{$classNames[$i]}',{$classHours[$i]},'{$classDescription[$i]}')");
+        echo "INSERT INTO classes(Number, Name, Hours, Description) VALUES('{$classNumbers[$i]}','{$classNames[$i]}',{$classHours[$i]},'{$classDescription[$i]}');" . "<br/>";       
+        $conn->query("INSERT INTO classes(Number, Name, Hours, Description) VALUES('{$classNumbers[$i]}','{$classNames[$i]}',{$classHours[$i]},'{$classDescription[$i]}');");
     }
     $conn->commit();
 
