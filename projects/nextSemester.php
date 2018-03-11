@@ -13,11 +13,8 @@
   </head>
 
   <script>
-    //This first function call creates the initial table where all classes show
-    $(document).ready(function(){
-      semester = document.getElementById('mySelect').value;
-      name = document.getElementById('className').value;
-
+    //The function that does all the talking with the database.
+    function updateSearch(){
       $.ajax({ url: 'https://michaeltimmer.me/Functions/retrieveClasses.php',
         data: {semester: semester, name: name},
         type: 'POST',
@@ -25,6 +22,13 @@
         $("#searchResults").html(output);
         }
       });
+    }
+    
+    //This first function call creates the initial table where all classes show
+    $(document).ready(function(){
+      semester = document.getElementById('mySelect').value;
+      name = document.getElementById('className').value;
+      updateSearch();
     });
 
     //This function updates table as keys are pressed.
@@ -32,14 +36,7 @@
       $("#className").keyup(function(){
         semester = document.getElementById('mySelect').value;
         name = document.getElementById('className').value;
-
-        $.ajax({ url: 'https://michaeltimmer.me/Functions/retrieveClasses.php',
-         data: {semester: semester, name: name},
-         type: 'POST',
-         success: function(output) {
-          $("#searchResults").html(output);
-          }
-        });
+        updateSearch();
       })
     });
 
@@ -48,14 +45,7 @@
       $("#mySelect").change(function(){
         semester = document.getElementById('mySelect').value;
         name = document.getElementById('className').value;
-
-        $.ajax({ url: 'https://michaeltimmer.me/Functions/retrieveClasses.php',
-         data: {semester: semester, name: name},
-         type: 'POST',
-         success: function(output) {
-          $("#searchResults").html(output);
-          }
-        });
+        updateSearch();
       })
     });    
   </script>
