@@ -32,9 +32,9 @@
                 <td> {$row['Term']} </td>
                 <td> {$row['Prerequisites']} </td>
             </tr>";
-            $output .= "            </tbody>
-            </table>";
         }
+        $output .= "            </tbody>
+        </table>";
         
     } else {
         $conn->close();
