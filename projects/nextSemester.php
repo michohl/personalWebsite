@@ -5,13 +5,50 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/circles.css">
   <link rel="stylesheet" href="/css/navbar.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   </head>
+
+  <script>
+    //The function that does all the talking with the database.
+    function updateSearch(){
+      $.ajax({ url: 'https://michaeltimmer.me/Functions/retrieveClasses.php',
+        data: {semester: semester, name: name},
+        type: 'POST',
+        success: function(output) {
+        $("#searchResults").html(output);
+        }
+      });
+    }
+    
+    //This first function call creates the initial table where all classes show
+    $(document).ready(function(){
+      semester = document.getElementById('mySelect').value;
+      name = document.getElementById('className').value;
+      updateSearch();
+    });
+
+    //This function updates table as keys are pressed.
+    $(function(){
+      $("#className").keyup(function(){
+        semester = document.getElementById('mySelect').value;
+        name = document.getElementById('className').value;
+        updateSearch();
+      })
+    });
+
+    //This function updates table as dropdown is changed.
+    $(function(){
+      $("#mySelect").change(function(){
+        semester = document.getElementById('mySelect').value;
+        name = document.getElementById('className').value;
+        updateSearch();
+      })
+    });    
+  </script>
 
   <body>
     <?php require_once('../Functions/navbar.php');?>
@@ -21,53 +58,24 @@
         <h1>Next Semester Information</h1>
     </div>
     <!-- CODE STUFF HERE -->
-    <form>
-    Select a semester to view:
-    <select name="mySelect" id="mySelect" onchange="test(this.value)">
-        <option value = "0">Please make a selection</option>
-        <option value = "1">Fall</option>
-        <option value = "2">Spring</option>
-        <option value = "3">Both</option>
-    </select>
-
-    </form>
-
-    <div id="display_here"></div>
-
-    <div id="page-wrapper">
-
-    </header>
-    </div>
-    </section>
-
-    <!--Using the XMLHttpRequest Object-->
-    <!--https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest-->
-    <button type="button" onclick="loadXMLDoc(document.getElementById('mySelect').value)">View Courses</button>
-    <div id="demo">
+    <div class="text-center" id="userInput">
+      <form>
+      Select a semester to view:
+      <select name="mySelect" id="mySelect" onchange="test(this.value)">
+          <option value = "">All</option>
+          <option value = "Fall">Fall</option>
+          <option value = "Spring">Spring</option>
+          <option value = "Variable">Variable</option>
+        </select>
+        
+        <label for="className" style="margin-left: 2%;">Class Name: </label>
+        <input type="text" id="className"/>
+      </form>
+    
+      <div id="searchResults" style="margin-top: 4%; margin-left: 9%;"></div>
+      
     </div>
 
-    <script>
-    function loadXMLDoc(userChoice) {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-    document.getElementById("demo").innerHTML =
-    "<br>" + this.responseText;
-    }
-    };
-    console.log(userChoice);
-    if(userChoice === '1'){
-    xhttp.open("GET", "NextSemester/fall.txt", true);
-    }
-    if(userChoice === '2'){
-    xhttp.open("GET", "NextSemester/spring.txt", true);
-    }
-    if(userChoice === '3'){
-    xhttp.open("GET", "NextSemester/both.txt", true);
-    }
-    xhttp.send();
-    }
-    </script>
   </body>
   
 </html>
