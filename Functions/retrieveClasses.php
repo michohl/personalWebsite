@@ -1,12 +1,12 @@
 <?php
-    error_reporting(E_ALL);
-    ini_set('display_errors', 1);
-
     require_once('../admin/config.php');
-    //print_r($_POST);
+    //require_once('scrapeClasses.php');
+
     $conn = mysqli_connect($loc, $user, $pass, $db2);
 
-    $result = $conn->query("SELECT * FROM classes WHERE Term LIKE '%" . $_POST["semester"] . "%'" . "AND Name LIKE '%" . $_POST["name"] . "%'");
+    $result = $conn->query("SELECT * FROM classes WHERE 
+    Term LIKE '%" . $_POST["semester"] . "%'" . 
+    "AND Name LIKE '%" . $_POST["name"] . "%'");
     
     if ($result->num_rows > 0) {
         // output data of each row
