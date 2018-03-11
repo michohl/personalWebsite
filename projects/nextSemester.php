@@ -42,6 +42,22 @@
         });
       })
     });
+
+    //This function updates table as dropdown is changed.
+    $(function(){
+      $("#mySelect").change(function(){
+        semester = document.getElementById('mySelect').value;
+        name = document.getElementById('className').value;
+
+        $.ajax({ url: 'https://michaeltimmer.me/Functions/retrieveClasses.php',
+         data: {semester: semester, name: name},
+         type: 'POST',
+         success: function(output) {
+          $("#searchResults").html(output);
+          }
+        });
+      })
+    });    
   </script>
 
   <body>
@@ -56,9 +72,10 @@
       <form>
       Select a semester to view:
       <select name="mySelect" id="mySelect" onchange="test(this.value)">
-          <option value = "">Both</option>
+          <option value = "">All</option>
           <option value = "Fall">Fall</option>
           <option value = "Spring">Spring</option>
+          <option value = "Variable">Variable</option>
         </select>
         
         <label for="className" style="margin-left: 2%;">Class Name: </label>
