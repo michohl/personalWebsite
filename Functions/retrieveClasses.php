@@ -10,7 +10,7 @@
     
     if ($result->num_rows > 0) {
         // output data of each row
-        $output = "<table class='table table-responsive center-block' style='width: 40%'>
+        $output = "<table class='table center-block' style='width: 50%; margin-right: 30%;'>
             <thead>
                 <tr>
                     <th>Number</th>

@@ -11,6 +11,10 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   </head>
+  
+  <style>
+    th {text-align:center}
+  </style>
 
   <script>
     //The function that does all the talking with the database.
