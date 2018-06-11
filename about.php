@@ -22,9 +22,9 @@
 
         <p>This website was authored by Michael Riesberg-Timmer</p>
         <p>Launch date: July 21st, 2016</p>
-        <p>Last updated: January 29th, 2018</p>
+        <p>Last updated: June 11th, 2018</p>
         <p>My contact email is: <a href="mailto:Me@MichaelTimmer.me" style="color: blue">Me@MichaelTimmer.me</a></p>
-        <p>The github page for this website can be found <a href="https://github.com/michohl/personalWebsite" style="color: blue">HERE</a></p>
+        <p>The github repo for this website can be found <a href="https://github.com/michohl/personalWebsite" style="color: blue">HERE</a></p>
     </div>
   </body>
   
