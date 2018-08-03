@@ -21,6 +21,7 @@
         <link href="https://fonts.googleapis.com/css?family=Cinzel:700" rel="stylesheet"> 
 
         <title>MR-T's Portfolio</title>
+        <meta charset="UTF-8">
     </head>
 
     <style>
@@ -123,10 +124,10 @@
                         </div>
                         </div>
                     </div>
-                    <img src="assets/img/pantherSpice1.png" style="height:70vh;width:58%">
+                    <img class="materialboxed" src="assets/img/pantherSpice1.png" style="height:70vh;width:58%">
                 </div>
                 <div class="row">
-                    <h3 class="center">Next Semester Info &#8231; <a href="https://github.com/michohl/NextSemesterInfo"><i class="fab fa-github-square"></i></a></h3>
+                    <h3 class="center">Next Semsdfester Info &#8231; <a href="https://github.com/michohl/NextSemesterInfo"><i class="fab fa-github-square"></i></a></h3>
                     <div class="col s12 m5">
                         <div class="card-panel white">
                         <span class="black-text">
@@ -143,7 +144,7 @@
                         </div>
                         </div>
                     </div>
-                    <img src="https://user-images.githubusercontent.com/24578662/40287161-06ff58a8-5c71-11e8-8459-b8e5c006877a.png" style="height:100%;width:58%">
+                    <img class="materialboxed" src="https://user-images.githubusercontent.com/24578662/40287161-06ff58a8-5c71-11e8-8459-b8e5c006877a.png" style="height:100%;width:58%">
                 </div>
                 <div class="row">
                     <h3 class="center">CBA Equipment Checkout &#8231; <a href="https://github.com/michohl/equipmentCheckout"><i class="fab fa-github-square"></i></a></h3>
@@ -161,7 +162,7 @@
                         </div>
                         </div>
                     </div>
-                    <img src="https://user-images.githubusercontent.com/24578662/40803865-53e03f86-64df-11e8-9708-5a904810bf96.png" style="height:100%;width:58%">
+                    <img class="materialboxed" src="assets/img/cba_checkout.png" style="height:100%;width:58%">
                 </div>                            
             </div>
             
@@ -183,6 +184,12 @@
         </footer>
 
         <!--JavaScript at end of body for optimized loading-->
-        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded',function(){
+                var elems = document.querySelectorAll('.materialboxed');
+                var instances = M.Materialbox.init(elems,{});
+            });
+        </script>
     </body>
 </html>
