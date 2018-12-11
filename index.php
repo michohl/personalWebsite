@@ -23,7 +23,7 @@
         <section>
             <h2 style="font-family: 'Cinzel', serif" class="center">TL;DR?</h2>
 
-            <p class="flow-text center">You can check out my R&#233;sum&#233; <a style="color:blue" href="resume.html">here.</a></p>
+            <p class="flow-text center">You can check out my R&#233;sum&#233; <a style="color:blue" href="resume.php">here.</a></p>
             
             <div class="container" style="padding-bottom: 30px">
                 <div class="divider"></div>
