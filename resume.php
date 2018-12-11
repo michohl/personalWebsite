@@ -14,6 +14,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
+  <?php require_once('Functions/navbar.php'); ?>
+
   <!-- The Grid -->
   <div class="w3-row-padding">
   
@@ -60,9 +62,13 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-blue" style="height:24px;width:100%"></div>
           </div>
+          <p>ASL</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-blue" style="height:24px;width:35%"></div>
+          </div>
           <p>Spanish</p>
           <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-blue" style="height:24px;width:20%"></div>
+            <div class="w3-round-xlarge w3-blue" style="height:24px;width:10%"></div>
           </div>
           <br>
         </div>
@@ -109,12 +115,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
       <div class="w3-container w3-card w3-white">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-code fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Projects</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>IT Inventory</b></h5>
-          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017- <span class="w3-tag w3-blue w3-round">Current</span></h6>
-          <p>Developed a web based checkout system for an IT department I work for. The site utilizes PHP, MySQL, CodeIgniter, and JQuery.</p>
-          <hr>
-        </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Personal Website</b></h5>
           <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016- <span class="w3-tag w3-blue w3-round">Current</span></h6>

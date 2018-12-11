@@ -1,49 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-        <!-- Font Awesome -->
-        <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"> -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-        <script src="https://use.fontawesome.com/94f29caf94.js"></script>
-
-        
-        <!-- Compiled and minified CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-
-        <!--Let browser know website is optimized for mobile-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-        <!-- Google fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Exo:900" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Cinzel:700" rel="stylesheet"> 
-
         <title>MR-T's Portfolio</title>
-        <meta charset="UTF-8">
     </head>
 
-    <style>
-        i{
-            margin-right: 2%;
-        }
-
-        a {
-            color: black;
-        }
-    </style>
-
     <body>
-        <div class="row">
-            <div class="col s12">
-                <h4 style="font-family: 'Cinzel', serif" class="center">Michael Riesberg-Timmer</h4>
-                <p style="font-family: 'Cinzel', serif" class="center">Computer Science &#8231; IT &#8231; Programmer</p>
-            </div>    
-        </div>
-        <div class="container" style="padding-bottom: 30px">
-            <div class="divider"></div>
-        </div>
+        <?php require_once('Functions/navbar.php'); ?>
 
         <section>
             <h2 style="font-family: 'Cinzel', serif" class="center">Where to Find Me?</h2>
@@ -61,7 +23,7 @@
         <section>
             <h2 style="font-family: 'Cinzel', serif" class="center">TL;DR?</h2>
 
-            <p class="flow-text center">You can check out my R&#233;sum&#233; <a style="color:blue" href="resume.html">here.</a></p>
+            <p class="flow-text center">You can check out my R&#233;sum&#233; <a style="color:blue" href="resume.php">here.</a></p>
             
             <div class="container" style="padding-bottom: 30px">
                 <div class="divider"></div>
@@ -93,7 +55,7 @@
                     to make some quality of life improvements for the department.
                 </p>
                 <p class="flow-text center">
-                    Most of this boils down to simple scripting which can be seen in my github repo <a style="color:blue" href="https://github.com/michohl/workScripts">here.</a>
+                    Most of this boils down to simple scripting.
                     However I have had the wonderful opportunity of working on two major projects that are better suited for showing my development abilities including 
                     a web based inventory management system and a web based checkout system to monitor laptop and projector checkouts.                    
                 </p>
@@ -135,7 +97,7 @@
                             I took the courses from their list and by storing it in my own database 
                             I am able to perform a lookup on each key stroke in the search bar. 
                             This provides the currently available information in a more digestable 
-                            fashion while being easier to search. Live demo can be seen <a href="projects/nextSemester.php" style="color:blue">Here.</a>
+                            fashion while being easier to search.
                         </span>
                         <div class="row">
                             <p class="flow-text black-text">Technology Used:</p>
