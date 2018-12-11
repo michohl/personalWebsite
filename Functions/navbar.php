@@ -1,61 +1,44 @@
 <?php
 echo '
-    <!-- Header -->
-    <nav class="navbar navbar-custom">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                <a class="navbar-brand" href="/">MichaelTimmer.me</a>
-              </div>
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="/">Home</a></li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Freshman
-                    <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/classes/cs1510.php">Intro to Computing</a></li>
-                        <li><a href="/classes/cs1520.php">Data Structures</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sophmore
-                    <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/classes/cs1410.php">Computer Organization</a></li>
-                        <li><a href="/classes/cs2530.php">Intermediate Computing</a></li>
-                        <li><a href="/classes/cs3150.php">Information Storage & Retrieval</a></li>
-                        <li><a href="/classes/cs3430.php">Operating Systems</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Junior
-                    <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/classes/cs3140.php">Databases</a></li>
-                        <li><a href="/classes/cs3470.php">Networking</a></li>
-                        <li><a href="/classes/cs3540.php">PLP</a></li>
-                        <li><a href="/classes/cs3730.php">Project Management</a></li>
-                        <li><a href="/classes/cs4410.php">System Security</a></li>
-                        <li><a href="/classes/cs3120.php">User Interface & Design</a></li>
-                    </ul>
-                    </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Personal Projects
-                    <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="https://github.com/michohl">My Github</a></li>
-                        <li><a href="/projects/nextSemester.php">Next Semester</a></li>
-                        <li><a href="/projects/whosin.php">Who\'s In</a></li>
-                    </ul>
-                </li>     
-                <li class="active"><a href="/about.php">About</a></li>                                                                  
-              </ul>
-              <form class="navbar-form navbar-right" action="/construction.php">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <button class="btn btn-default" type="submit">
-                        <i class="glyphicon glyphicon-search"></i>
-              </form>
-            </div>
-          </nav>';
-?>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/94f29caf94.js"></script>
+
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:700" rel="stylesheet"> 
+</head>
+
+<style>
+    i{
+        margin-right: 2%;
+    }
+
+    a {
+        color: black;
+    }
+</style>
+
+<div class="row">
+    <div class="col s12">
+        <h4 style="font-family: \'Cinzel\', serif" class="center">
+            <a href="/">Michael Riesberg-Timmer</a>
+        </h4>
+    <p style="font-family: \'Cinzel\', serif" class="center">Computer Science &#8231; IT &#8231; Programmer</p>
+    </div>    
+</div>
+<div class="container" style="padding-bottom: 30px">
+    <div class="divider"></div>
+</div>
+';
