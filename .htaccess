@@ -1,2 +1,6 @@
 AddType x-mapp-php7 .php
 AddHandler x-mapp-php7 .php
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{SERVER_NAME}/$1 [R,L]
