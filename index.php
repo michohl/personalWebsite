@@ -89,7 +89,7 @@
                     <img class="materialboxed" src="assets/img/pantherSpice1.png" style="height:70vh;width:58%">
                 </div>
                 <div class="row">
-                    <h3 class="center">Next Semsdfester Info &#8231; <a href="https://github.com/michohl/NextSemesterInfo"><i class="fab fa-github-square"></i></a></h3>
+                    <h3 class="center">Next Semester Info &#8231; <a href="https://github.com/michohl/NextSemesterInfo"><i class="fab fa-github-square"></i></a></h3>
                     <div class="col s12 m5">
                         <div class="card-panel white">
                         <span class="black-text">
