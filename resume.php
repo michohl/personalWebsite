@@ -25,9 +25,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
           <img src="assets/img/headshot.JPG" style="width:100%; height:50%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2>Michael Riesberg-Timmer</h2>
-          </div>
         </div>
         <div class="w3-container">
           <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue"></i>Computer Scientist</p>
