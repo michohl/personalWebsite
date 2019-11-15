@@ -27,7 +27,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <img src="assets/img/headshot.JPG" style="width:100%; height:50%" alt="Avatar">
         </div>
         <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue"></i>Associate Systems Devloper</p>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue"></i>Systems Engineer</p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue"></i>Owatonna, MN</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue"></i>Me@MichaelTimmer.me</p>
           <!--<p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-blue"></i>1224435534</p>-->
@@ -45,10 +45,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:90%">90%</div>
           </div>
           
-          <p>PHP</p>
+          <p>Bash</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:80%">
-              <div class="w3-center w3-text-white">70%</div>
+            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:90%">
+              <div class="w3-center w3-text-white">90%</div>
             </div>
           </div>
           
@@ -57,7 +57,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:90%">90%</div>
           </div>
           
-          <p>MySQL</p>
+          <p>OpenShift</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:80%">80%</div>
           </div>
@@ -90,9 +90,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Work Experience</h2>
 
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Systems Developer / Federated Mutual Insurance</b></h5>
+          <h5 class="w3-opacity"><b>Systems Engineer / Federated Mutual Insurance</b></h5>
           <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2019 - <span class="w3-tag w3-blue w3-round">Current</span></h6>
-          <p>Maintain and develop COBOL code to support business operations.</p>
+          <p>Administer Linux hosts, OpenShift 4, and mainframes</p>
           <hr>
         </div>
         

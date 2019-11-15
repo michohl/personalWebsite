@@ -48,18 +48,17 @@
         <section>
             <h2 style="font-family: 'Cinzel', serif" class="center">Work Experience</h2>
 
-            <div class="container">
-                <p class="flow-text center">
-                    I have worked as an IT Technician for the University of Northern Iowa's Curris Business Building for one year now. 
-                    While this is not your typical Software Engineering job it has given me opportunities to use my skills learned from Computer Science
-                    to make some quality of life improvements for the department.
+			<div class="container">
+				<p class="flow-text center">
+                    I currently work as a Systems Engineer at Federated Mutual Insurance. My primary roles are to administer the company's Linux hosts, OpenShift environment, and Mainframe.
                 </p>
+
                 <p class="flow-text center">
-                    Most of this boils down to simple scripting.
-                    However I have had the wonderful opportunity of working on two major projects that are better suited for showing my development abilities including 
-                    a web based inventory management system and a web based checkout system to monitor laptop and projector checkouts.                    
+                    Prior to my current position I worked as an IT Technician for the University of Northern Iowa's Curris Business Building for two years. During my time in this position I was responsible for
+					responding to help desk and supporting about 150 users and their desktops. My responsibilities also included programming on the side to develop internal tools such as a web based inventory management tool,
+					scripts to automate tasks such as software installation and inventory auditing.  
                 </p>
-            </div>
+             </div>
             
             <div class="container" style="padding-bottom: 30px">
                 <div class="divider"></div>
